@@ -112,6 +112,7 @@ with open('./DownloadedFile.txt', 'wb') as download_file:
 with open('./DownloadedFile.txt', 'r') as file:
     content = file.read()
     print(content)
+
 ---------------------------------------------------------------------------
 - Replace placeholders with your actual details. This script authenticates using the access key, accesses the specified blob, and prints its contents.
 
