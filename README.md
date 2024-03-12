@@ -85,6 +85,8 @@ Access keys are a common method for accessing Azure services but require careful
 1. **Remote into Your VM**: Connect to your Azure VM where Python is installed.
 2. **Python Script for Blob Access**: Create a new one or update the existing Python script.
 
+'''Python
+---------------------------------------------------------------------------
 from azure.storage.blob import BlobServiceClient, BlobClient
 
 \# Replace these with your Azure Storage account details
@@ -110,7 +112,7 @@ with open('./DownloadedFile.txt', 'wb') as download_file:
 with open('./DownloadedFile.txt', 'r') as file:
     content = file.read()
     print(content)
-
+---------------------------------------------------------------------------
 - Replace placeholders with your actual details. This script authenticates using the access key, accesses the specified blob, and prints its contents.
 
   ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/51c7f493-8727-4af4-8183-a71ad14a3d6d)
@@ -169,6 +171,8 @@ Azure Managed Identities eliminate the need for developers to manage credentials
 
 1. **Python Script for Blob Access Using Managed Identity**:
 
+'''Python
+---------------------------------------------------------------------------
 from azure.storage.blob import BlobServiceClient, BlobClient
 from azure.identity import DefaultAzureCredential
 
@@ -195,6 +199,8 @@ with open('./DownloadedFile_MI.txt', 'wb') as download_file:
 with open('./DownloadedFile_MI.txt', 'r') as file:
     content = file.read()
     print(content)
+
+---------------------------------------------------------------------------
 
 Replace placeholders with your actual details. This script uses DefaultAzureCredential for authentication, which automatically uses the VM's managed identity when accessing Blob Storage.
 
