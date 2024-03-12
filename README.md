@@ -43,10 +43,7 @@ By the end of this guide, you'll have a clear understanding of how Azure Managed
 
 
 
-**Writing and Running the Application:**
-
-1. **Write Your Application**: You can use Notepad or any text editor to write your Python scripts for both scenarios. Save it with a .py extension, for example, blob-MI.py.
-2. **Run the Application**: Navigate to the directory where your script is saved using the cd command in Command Prompt, then run the script with: python blob-MI.py
+4. **Write Your Application**: You can use Notepad or any text editor to write your Python scripts for both scenarios. Save it with a .py extension, for example, blob-MI.py. (The code will be provided later in this document based on each scenarios.)
 
 
 **Additional Notes:**
