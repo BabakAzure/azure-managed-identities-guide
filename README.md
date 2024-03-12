@@ -38,8 +38,7 @@ By the end of this guide, you'll have a clear understanding of how Azure Managed
 
 ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/e15bafb9-3fdc-4845-9dae-7bf1bb9cce8e)
 
-![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/9e20cea1-d2aa-4506-ac27-58820bdf366f)
-
+![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/3da18891-5518-4302-b5cb-7de672f0b0f5)
 
 
 
@@ -113,7 +112,7 @@ with open('./DownloadedFile.txt', 'r') as file:
 ---------------------------------------------------------------------------
 - Replace placeholders with your actual details. This script authenticates using the access key, accesses the specified blob, and prints its contents.
 
-  ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/51c7f493-8727-4af4-8183-a71ad14a3d6d)
+ ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/4e2b544c-82ac-4cad-8250-caed89da8b6f)
 
 
 3. **Execute the Script**: Run the script via the terminal or command prompt using python blob-MI.py. The content of your blob should be printed to the console.
