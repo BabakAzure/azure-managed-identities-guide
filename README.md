@@ -1,8 +1,10 @@
 **Hands-On Guide to Azure Managed Identities: A Practical Exploration through Blob Storage Access**
 
+
 **Introduction**
 
 In the dynamic world of cloud computing, ensuring secure access to cloud resources is a constant challenge. Azure Managed Identities offer a secure and streamlined solution, enabling applications to authenticate seamlessly without storing sensitive information like passwords or keys. This guide provides a practical look at Azure Managed Identities by comparing two access methods to Azure Blob Storage from an Azure Virtual Machine (VM).
+
 
 **Access Methods Covered:**
 
@@ -10,6 +12,7 @@ In the dynamic world of cloud computing, ensuring secure access to cloud resourc
 2. **Using Azure Managed Identity**: A more secure method that uses Azure's built-in managed identity for the VM. This approach does not require storing secret keys in the code, enhancing security and manageability.
 
 By the end of this guide, you'll have a clear understanding of how Azure Managed Identities work and their benefits over traditional access keys.
+
 
 **Pre-Requisites**
 
@@ -22,11 +25,12 @@ By the end of this guide, you'll have a clear understanding of how Azure Managed
 
 1. **Create a VM**
 2. **Install Python**: Download and install Python from the official Python website on the VM, ensuring it's added to your system's PATH.
-3. **Install Required Libraries**: Open the Command Prompt on thge VM and install necessary Azure libraries with:
-pip install azure-storage-blob azure-identity
+3. **Install Required Libraries**: Open the Command Prompt on thge VM and install necessary Azure libraries with: "pip install azure-storage-blob azure-identity"
 
 - **Azure CLI Verification**: Use "az identity list" to verify the identity is created.
+  
 ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/a58d570f-fc45-4904-b751-e35a5b158300)
+
 
 4. **Create the Storage Account and Upload the Test File in the Blob Container:**
 
@@ -38,12 +42,12 @@ pip install azure-storage-blob azure-identity
 
 
 
+
 **Writing and Running the Application:**
 
 1. **Write Your Application**: You can use Notepad or any text editor to write your Python scripts for both scenarios. Save it with a .py extension, for example, blob-MI.py.
-2. **Run the Application**: Navigate to the directory where your script is saved using the cd command in Command Prompt, then run the script with:
+2. **Run the Application**: Navigate to the directory where your script is saved using the cd command in Command Prompt, then run the script with: python blob-MI.py
 
-python blob-MI.py
 
 **Additional Notes:**
 
@@ -52,9 +56,8 @@ python blob-MI.py
 - ensure that when setting up your virtual machine and storage account, you select the same Azure region for both.
 - Make sure to run the correct version of the script depending on whether you're using an access key or Managed Identity.
 
-**Scenario 1:**
 
-**Accessing Azure Blob Storage Using Access Keys**
+**Scenario 1: Accessing Azure Blob Storage Using Access Keys**
 
 **Why Access Keys?**
 
@@ -72,7 +75,9 @@ Access keys are a common method for accessing Azure services but require careful
 3. **Access Keys**: On the left menu under "Security + networking", click on "Access keys". Here, you'll find two access keys and connection strings.
 4. **Copy Key**: Click on the "Show keys" option and copy "Key1" for later use.
 
+
 ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/4fc9c2e9-2a4e-4af3-a932-a2603ed8e640)
+
 
    
 **Step 2: Access Blob Storage Using Python**
