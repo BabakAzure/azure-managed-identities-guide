@@ -27,6 +27,9 @@ pip install azure-storage-blob azure-identity
 
 - **Azure CLI Verification**: Use az identity list to verify the identity is created.
 
+- ![image](https://github.com/babakcloud/azure-managed-identities-guide/assets/133662008/18e20a98-07f1-4771-9541-794b3c9f8579)
+
+
 **Writing and Running the Application:**
 
 1. **Write Your Application**: You can use Notepad or any text editor to write your Python scripts for both scenarios. Save it with a .py extension, for example, blob-MI.py.
